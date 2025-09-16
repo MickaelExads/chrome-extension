@@ -1,0 +1,41 @@
+html,
+body {
+  width: 300px;
+  min-height: 130px;
+  margin: 0;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.input-group-append .btn-info {
+  background: white;
+  color: #17a2b8;
+}
+
+#url-display {
+  cursor: default;
+}
+
+.buttons .btn-group-sm>.btn,
+.buttons .btn-sm {
+  font-size: .72rem;
+}
+.custom-option {
+  display: flex;
+  align-items: center;
+}
+
+.custom-option img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}

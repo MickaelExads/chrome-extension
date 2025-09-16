@@ -1,0 +1,24 @@
+{
+  "update_url": "http://github.com/mikael-14",
+  "name": "Placeholder Generator",
+  "version": "0.1",
+  "description": "Quickly generate image or video",
+  "permissions": [
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/image16.png",
+      "32": "images/image32.png",
+      "48": "images/image48.png",
+      "128": "images/image128.png"
+    }
+  },
+  "icons": {
+    "16": "images/image16.png",
+    "32": "images/image32.png",
+    "48": "images/image48.png",
+    "128": "images/image128.png"
+  },
+  "manifest_version": 3
+}

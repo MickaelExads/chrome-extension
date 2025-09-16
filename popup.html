@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Placeholder Image</title>
+  <link href="./libraries/font-awesome.css" rel="stylesheet">
+  <link href="./libraries/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pop.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!--Generate Plain Placeholder Image-->
+  <section class="placeholder-image bg-secondary border rounded p-2"><span class="glyphicon glyphicon-chevron-down"></span>
+    <form id='generate-image'>
+      <legend class='text-white'>Generate Placeholder Image</legend>
+      <div class="form-row justify-content-between">
+        <div class="col">
+          <input type="number" min='0' class='form-control form-control-sm' id='width' placeholder="Width" required
+            value="300">
+        </div>
+        <div class="col">
+          <input type="number" min='0' class='form-control form-control-sm' id='height' placeholder="Height"
+            value="250">
+        </div>
+        <div class="col">
+          <select id="format" class="form-control form-control-sm">
+            <option value='png' selected="selected">png</option>
+            <option value='jpg'>jpg</option>
+            <option value='jpeg'>jpeg</option>
+            <option value='svg'>svg</option>
+          </select>
+        </div>
+      </div>
+      <!--Second row-->
+      <div class="form-row justify-content-center mt-2">
+        <div class="col-6">
+          <input type="text" class="form-control form-control-sm" id="display-text" placeholder="Text on image...">
+        </div>
+        <div class="col-2">
+          <input type="color" class="form-control form-control-sm" id="bg-color" value="#D3D3D3">
+        </div>
+        <div class="col-4">
+          <button class="btn btn-sm btn-info w-100" type="submit">Generate</button>
+        </div>
+      </div>
+    </form>
+    <div class="d-none flex-column" id='url-panel'>
+      <div class="input-group input-group-sm my-2 ">
+        <input type="text" class="form-control" aria-describedby="button-addon4" id='url-display'>
+        <div class="input-group-append">
+          <a href="#" class="btn btn-info" role="button" id='open-url' target='_blank'>Open</a>
+          <a href="#" class="btn btn-info" role="button" id='copy-url'>Copy</a>
+        </div>
+      </div>
+      <img src="" id="image-generated" class="mt-1" style="max-height: 250px;width: fit-content;max-width: 100%;" />
+    </div>
+  </section>
+
+  <!--Video -->
+  <section class="placeholder-image bg-secondary border rounded p-2">
+    <form id='generate-video'>
+      <legend class='text-white'>Generate Placeholder Video</legend>
+      <div class="form-row justify-content-between">
+        <div class="col">
+          <input type="number" min='0' class='form-control form-control-sm' id='video-width' placeholder="Width"
+            required value="300">
+        </div>
+        <div class="col">
+          <input type="number" min='0' class='form-control form-control-sm' id='video-height' placeholder="Height"
+            required value="250">
+        </div>
+        <div class="col">
+          <input type="number" min='1' class='form-control form-control-sm' id='video-duration' placeholder="Seconds"
+            required >
+        </div>
+      </div>
+      <!--Second row-->
+      <div class="form-row justify-content-center mt-2">
+        <div class="col-6">
+          <input type="text" class="form-control form-control-sm" id="video-text" placeholder="Text on video...">
+        </div>
+        <div class="col-2">
+          <input type="color" class="form-control form-control-sm" id="video-color" value="#D3D3D3">
+        </div>
+        <div class="col-4">
+          <button class="btn btn-sm btn-info w-100" type="submit" id="generate-video-button">Generate</button>
+        </div>
+      </div>
+    </form>
+    <div class="d-none flex-column mt-2" id='video-panel'>
+      <div class="input-group input-group-sm my-2 ">
+        <div class="input-group-append d-flex w-100">
+          <a href="#" class="btn btn-info w-100" role="button" id="video-download">Download Video</a>
+          <a href="#" class="btn btn-info w-100" role="button" id="video-open-tab">Open Video</a>
+        </div>
+      </div>
+      <video id="dummy-video" controls controlsList="nofullscreen" class="w-100 mt-1"></video>
+    </div>
+  </section>
+
+  <section class="placeholder-image bg-secondary border rounded p-2">
+    <form>
+      <legend class='text-white'>Public Video (.mp4)</legend>
+      <div class="form-row justify-content-between">
+        <div class="col">
+          <select id="public-media-select"  class="form-control form-control-sm">
+            <option value="" selected="">Choose...</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <div class="d-none flex-column" id='public-panel'>
+      <div class="input-group input-group-sm my-2 ">
+        <input type="text" class="form-control" aria-describedby="button-addon5" id='public-link'>
+        <div class="input-group-append">
+          <a href="#" id="public-href" class="btn btn-info" role="button" target='_blank'>Open</a>
+        </div>
+      </div>
+      <img src="" id="public-image" class="mt-1" style="max-height: 250px;width: fit-content;max-width: 100%;" />
+    </div>
+  </section>
+
+  <script src="js/popup.js"></script>
+  <script src="js/video.js"></script>
+  <script src="js/public-videos.js"></script>
+</body>
+
+</html>
