@@ -59,16 +59,6 @@ Select the extension directory: find-placeholder-image
 
 ![Screen Shot of free image searcher in GIF](gif/freeImage.gif)
 
-
-### Generate Image URL reports
-1. Search any royalty free image.
-2. Visit the image you'd like to access.
-3. Right Click on the **image** to open the right-click menu.
-4. Choose **ShowImageURL** to generate an URL report.
-5. Click on **Search All** button to directly show search results of all four websites.
-6. Choose the size you prefer and click on the URL to copy the link.
-
-
 ![Screen Shot of URL report in GIF](gif/URLReport.gif)
 
 ## Authors
