@@ -1,18 +1,14 @@
-# Find Royalty Free & Placeholder Image
-
-A functional Google Extension to help your "readily" generate placeholder image and find the right royalty free images with accessible links that you can use right away!
 
 ## Project First Look
 ![image](https://drive.google.com/uc?export=view&id=1_CtfGnEOlv-00k-QdLLWYN4CdUw2OqGb)
 
 
 ## Features
-| Functions                                                    |
-| ------------------------------------------------------------ |
-| Generate customized placeholder image                        |
-| Search for royalty free image on four popular websites       |
-| Generate URL reports with all available size of the image    |
-| Generate customized placeholder video Webm                   |
+| Functions                                                      |
+| ---------------------------------------------------------------|
+| Generate customized placeholder image                          |
+| Generate URL reports with all available size of the image      |
+| Generate customized placeholder video Webm (this takes a while)|
 
 ## Installation
 The following instructions will get you a copy of the project and all the setting needed to run it on your chrome.
@@ -22,13 +18,6 @@ The following instructions will get you a copy of the project and all the settin
 
 - [Google Chrome](https://www.google.com/chrome/)
 
-### Clone
-
-Clone this repository to your local machine
-
-```
-$ git clone https://github.com/smallpaes/find-placeholder-image.git
-```
 
 ### Setup
 
