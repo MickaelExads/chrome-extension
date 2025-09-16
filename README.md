@@ -50,11 +50,11 @@ Select the extension directory: find-placeholder-image
 ![Screen Shot of placeholder image generator in GIF](gif/placeholderIma.gif)
 
 
-### Search for royalty free image 
+### Generate Placeholder Video
 1. Click on extension icon.
-2. In **Search Royalty Free Image** section, input keyword to search.
-3. Click on **Pixabay** / **Pexels** / **Unsplash** / **Picjumbo** to show search results on their website.
-4. Click on **Search All** button to directly show search results of all four websites.
+2. In **Generate Placeholder Video** section, input time.
+3. Click on **Generate**. This gonna take the X seconds to generate that video.
+4. Click on **Download** button to save your video.
 
 
 ![Screen Shot of free image searcher in GIF](gif/freeImage.gif)
