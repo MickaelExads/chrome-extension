@@ -1,8 +1,11 @@
 html,
 body {
-  width: 300px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 400px;
   min-height: 130px;
   margin: 0;
+  padding: 0;
 }
 
 legend {
@@ -29,6 +32,7 @@ a:hover {
 .buttons .btn-sm {
   font-size: .72rem;
 }
+
 .custom-option {
   display: flex;
   align-items: center;
@@ -38,4 +42,25 @@ a:hover {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+
+#extension-close-btn {
+  position: fixed;
+  top: 4px;
+  right: 6px;
+  background: #17a2b8;
+  border: none;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+}
+
+#extension-close-btn:hover {
+  background: #17a2b8;
 }

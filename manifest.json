@@ -4,9 +4,9 @@
   "version": "0.1",
   "description": "Quickly generate image or video",
   "permissions": [
+    "sidePanel"
   ],
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
       "16": "images/image16.png",
       "32": "images/image32.png",
@@ -14,11 +14,20 @@
       "128": "images/image128.png"
     }
   },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "icons": {
     "16": "images/image16.png",
     "32": "images/image32.png",
     "48": "images/image48.png",
     "128": "images/image128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; media-src 'self' blob:;"
   },
   "manifest_version": 3
 }
