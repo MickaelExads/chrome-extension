@@ -1,18 +1,14 @@
-# Find Royalty Free & Placeholder Image
-
-A functional Google Extension to help your "readily" generate placeholder image and find the right royalty free images with accessible links that you can use right away!
 
 ## Project First Look
 ![image](https://drive.google.com/uc?export=view&id=1_CtfGnEOlv-00k-QdLLWYN4CdUw2OqGb)
 
 
 ## Features
-| Functions                                                    |
-| ------------------------------------------------------------ |
-| Generate customized placeholder image                        |
-| Search for royalty free image on four popular websites       |
-| Generate URL reports with all available size of the image    |
-| Generate customized placeholder video Webm                   |
+| Functions                                                      |
+| ---------------------------------------------------------------|
+| Generate customized placeholder image                          |
+| Generate URL reports with all available size of the image      |
+| Generate customized placeholder video Webm (this takes a while)|
 
 ## Installation
 The following instructions will get you a copy of the project and all the setting needed to run it on your chrome.
@@ -22,13 +18,6 @@ The following instructions will get you a copy of the project and all the settin
 
 - [Google Chrome](https://www.google.com/chrome/)
 
-### Clone
-
-Clone this repository to your local machine
-
-```
-$ git clone https://github.com/smallpaes/find-placeholder-image.git
-```
 
 ### Setup
 
@@ -61,24 +50,14 @@ Select the extension directory: find-placeholder-image
 ![Screen Shot of placeholder image generator in GIF](gif/placeholderIma.gif)
 
 
-### Search for royalty free image 
+### Generate Placeholder Video
 1. Click on extension icon.
-2. In **Search Royalty Free Image** section, input keyword to search.
-3. Click on **Pixabay** / **Pexels** / **Unsplash** / **Picjumbo** to show search results on their website.
-4. Click on **Search All** button to directly show search results of all four websites.
+2. In **Generate Placeholder Video** section, input time.
+3. Click on **Generate**. This gonna take the X seconds to generate that video.
+4. Click on **Download** button to save your video.
 
 
 ![Screen Shot of free image searcher in GIF](gif/freeImage.gif)
-
-
-### Generate Image URL reports
-1. Search any royalty free image.
-2. Visit the image you'd like to access.
-3. Right Click on the **image** to open the right-click menu.
-4. Choose **ShowImageURL** to generate an URL report.
-5. Click on **Search All** button to directly show search results of all four websites.
-6. Choose the size you prefer and click on the URL to copy the link.
-
 
 ![Screen Shot of URL report in GIF](gif/URLReport.gif)
 
