@@ -16,7 +16,22 @@ function generateVideo() {
     const button = document.getElementById("generate-video-button")
     button.disabled = true // Disable button while generating
     button.innerText = "Generating..."
-    // Hide 
+    
+    // Create and show progress bar
+    const progressContainer = document.createElement('div')
+    progressContainer.className = 'progress mt-2'
+    progressContainer.style.height = '20px'
+    
+    const progressBar = document.createElement('div')
+    progressBar.className = 'progress-bar progress-bar-striped progress-bar-animated bg-info'
+    progressBar.setAttribute('role', 'progressbar')
+    progressBar.style.width = '0%'
+    progressBar.textContent = '0%'
+    
+    progressContainer.appendChild(progressBar)
+    button.parentNode.appendChild(progressContainer)
+    
+    // Hide video panel
     const dummy = document.getElementById("video-panel")
     dummy.classList.add('d-none')
     dummy.classList.remove('d-flex')
@@ -51,7 +66,14 @@ function generateVideo() {
         const button = document.getElementById("generate-video-button")
         button.disabled = false // Enable button
         button.innerText = "Generate"
-        // Show
+        
+        // Remove progress bar
+        const progressContainer = button.parentNode.querySelector('.progress')
+        if (progressContainer) {
+            progressContainer.remove()
+        }
+        
+        // Show video panel
         const dummy = document.getElementById("video-panel")
         dummy.classList.remove('d-none')
         dummy.classList.add('d-flex')
@@ -74,6 +96,14 @@ function generateVideo() {
         if (elapsed >= duration) {
             recorder.stop()
             return
+        }
+
+        // Update progress bar
+        const progress = (elapsed / duration) * 100
+        const progressBar = document.querySelector('.progress-bar')
+        if (progressBar) {
+            progressBar.style.width = progress + '%'
+            progressBar.textContent = Math.round(progress) + '%'
         }
 
         // Simple text animation: change Y position over time
